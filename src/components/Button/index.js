@@ -1,15 +1,26 @@
-import React, { useState } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
-export default function Component(props) {
-
-    const [count, setCount] = useState(0);
+export default function Button(props) {
 
     return (
-        <div>
-            <p>You clicked {count} times</p>
-            <button onClick={() => setCount(count + 1)}>
-                Click me
-            </button>
-        </div>
+        <button 
+            className={'btn ' + props.className}
+            onClick={props.onClick}
+        >
+            {props.title}
+        </button>
     );
 }
+
+Button.propTypes = {
+    className: PropTypes.string,
+    onClick: PropTypes.func,
+    title: PropTypes.string
+};
+
+Button.defaultProps = {
+    className: '',
+    onClick: ()=>{},
+    title: ''
+};

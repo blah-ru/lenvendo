@@ -1,0 +1,108 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style-type: none; 
+}
+
+button:active,
+button:focus {
+    outline: none;
+}
+
+.container{
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.btn{
+    border: 2px solid gray;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.btn:active{
+    box-shadow: inset 1px 1px 1px 1px #aaa;
+}
+
+.bold{
+    font-weight: bold;
+}
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #00000050;
+}
+
+.modal__header {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.modal__body{
+    width: max-content;
+    margin: 8% auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+.modal__buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.textList {
+    width: max-content;
+    min-width: 150px;
+}
+
+.textList__item {
+    position: relative;
+    padding: 10px 40px 6px 5px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.textList__item_red{
+    background-color: red;
+}
+
+.textList__item_green{
+    background-color: green;
+}
+
+.textList__del {
+    position: absolute;
+    right: 0;
+}
+
+.textList__checked {
+    position: absolute;
+    left: -15px;
+    top: 13px;
+    color: #999;
+    font-size: 12px;
+}
+
+.header__info {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.header__info-marked{
+    display: flex;
+    flex-direction: column;
+}
+
+.header__text {
+    margin-right: 10px;
+}
