@@ -1,68 +1,46 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Lenvendo Тестовое задание для программистов Front-end
 
-## Available Scripts
+## 1. Необходимо реализовать одностраничное приложение, представляющее 
+из себя список текстовых блоков с дополнительной функциональностью.
 
-In the project directory, you can run:
+## 2. Текстовые блоки могут быть двух видов: простые и сложные.
 
-### `npm start`
+Простой текстовый блок содержит:
+* текст,
+* элемент управления "крестик", по нажатию на который выполняется 
+  удаление данного блока.
+  
+## 3. Кроме того, текстовый блок может быть выделен при помощи одиночного 
+нажатия кнопки мышки на блоке.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Сложный текстовый блок расширяет функциональность простого блока. Помимо
+всего вышеперечисленного он может быть красным или зеленым. Красное 
+состояние может быть переключено в зеленое и наоборот при помощи 
+двойного нажатия кнопки мышки на блоке.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## 4. При удалении сложного блока должно выводиться всплывающее сообщение,
+запрашивающее у пользователя подтвреждение совершаемого действия.
 
-### `npm test`
+## 5. Контент текстовых блоков генерируется случайным образом.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 6. Помимо этого, в приложении должны присутствовать следующие элементы
+управления:
 
-### `npm run build`
+* кнопка, осуществляющая добавление новых текстовых блоков,
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* панель состояния, отражающая информацию: 
+** общее количество текстовых блоков в настоящий момент времени,
+** количество выделенных блоков,
+** из выделенных -- количество красных и зеленых.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## 7. Стилевое оформление оставляется на усмотрение разработчика. Внешний вид
+блоков должен репрезентативно отражать их состояние.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Некоторые дополнения:
+* EcmaScript5,
+* MV*-архитектура,
+* Допустимо использовать любой фреймворк, однако, желательно, чтобы он
+  был низкоуровневым.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+# Реализация
+[Ссылка на реализацию] (https://kvanyukov.ru)
